@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.bmw.peek2slite.view.ui.PicShowActivity">
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photoview"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:visibility="gone"
+        android:background="@drawable/bg_pic_show_title"
+        android:id="@+id/pic_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:text="name"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/pic_show_title"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/pic_show_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_pic_show_title">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/activity_pic_show_list"
+                android:text="@string/capture_guandao_id" />
+            <TextView
+                style="@style/activity_pic_show_list"
+                android:text="@string/capture_quexian_style" />
+            <TextView
+                style="@style/activity_pic_show_list"
+                android:text="@string/capture_quexian_name" />
+            <TextView
+                style="@style/activity_pic_show_list"
+                android:text="@string/capture_quexian_grade" />
+            <TextView
+                style="@style/activity_pic_show_list"
+                android:text="@string/capture_quexian_distance" />
+            <TextView
+                style="@style/activity_pic_show_list"
+                android:text="@string/capture_quexian_clock" />
+            <TextView
+                style="@style/activity_pic_show_list"
+                android:text="@string/capture_quexian_length" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pic_show_guandaoId"
+                style="@style/activity_pic_show_list" />
+            <TextView
+                android:id="@+id/pic_show_style"
+                style="@style/activity_pic_show_list"/>
+            <TextView
+                android:id="@+id/pic_show_name"
+                style="@style/activity_pic_show_list" />
+            <TextView
+                android:id="@+id/pic_show_grade"
+                style="@style/activity_pic_show_list" />
+            <TextView
+                android:id="@+id/pic_show_distance"
+                style="@style/activity_pic_show_list"/>
+            <TextView
+                android:id="@+id/pic_show_clock"
+                style="@style/activity_pic_show_list" />
+            <TextView
+                android:id="@+id/pic_show_length"
+                style="@style/activity_pic_show_list" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pic_show_detail"
+            android:layout_marginLeft="20dp"
+            style="@style/activity_pic_show_list"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/pic_show_lastPage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/img_btn_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/page_last"
+        android:padding="10dp"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/pic_show_nextPage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/img_btn_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/page_next"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/picture_show_more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/more"
+        android:padding="10dp"
+        android:background="@drawable/img_btn_bg"/>
+
+</RelativeLayout>

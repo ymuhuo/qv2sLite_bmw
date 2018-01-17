@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="preview_textsize">20sp</dimen>
+    <dimen name="preview_boom_textsize">22sp</dimen>
+    <dimen name="small_preview_textsize">15sp</dimen>
+    <dimen name="toast_tv_size">11sp</dimen>
+    <dimen name="seekbarText">13sp</dimen>
+    <dimen name="lineWidth">1dp</dimen>
+    <dimen name="Setting_edt">12sp</dimen>
+    <dimen name="Setting_sureTxt">15sp</dimen>
+    <dimen name="record_dialog_title">16sp</dimen>
+    <dimen name="record_dialog_list_title">10sp</dimen>
+    <dimen name="record_dialog_edit">13sp</dimen>
+    <dimen name="capture_guandaohao">14sp</dimen>
+    <dimen name="pic_show_title">18sp</dimen>
+    <dimen name="pic_show_list">14sp</dimen>
+    <dimen name="preview_wifiLinkTextSize">18sp</dimen>
+    <dimen name="dialog_normal_title_textsize">15sp</dimen>
+    <dimen name="updateActivity_cancel_width">25dp</dimen>
+    <dimen name="updateActivity_cancel_padding">5dp</dimen>
+    <dimen name="updateActivity_width">250dp</dimen>
+    <dimen name="dialog_normal_message_textsize">15sp</dimen>
+</resources>

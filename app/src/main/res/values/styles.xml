@@ -1,0 +1,195 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorText</item>
+        <item name="colorPrimaryDark">@color/colorText</item>
+        <item name="colorAccent">@color/colorText</item>
+
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="all_Match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="all_Wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="width_Match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="height_Match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="main_linearlayout" parent="all_Match_parent">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">25.0dip</item>
+        <item name="android:thumb">@drawable/seebar_in</item>
+        <item name="android:thumbOffset">15.0dip</item>
+    </style>
+
+    <style name="MyLoadStyle">
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowContentOverlay">@null</item> <!-- 内容覆盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item> <!-- 窗口样式Dialog -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+
+    </style>
+
+    <style name="textSet">
+        <item name="android:textSize">@dimen/preview_textsize</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="small_textSet">
+        <item name="android:textSize">@dimen/small_preview_textsize</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="dialog_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_appear</item>
+        <item name="android:windowExitAnimation">@anim/dialog_disappear</item>
+    </style>
+
+    <style name="seekBar_text" parent="all_Wrap_content">
+        <item name="android:textSize">@dimen/seekbarText</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="dialog_btn_text" parent="seekBar_text">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="myHorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lineWidth</item>
+        <item name="android:background">@color/spacerlayer</item>
+    </style>
+    <style name="myVerticalLine">
+        <item name="android:layout_width">@dimen/lineWidth</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/spacerlayer</item>
+    </style>
+
+
+
+    <style name="Setting_edt" parent="all_Wrap_content">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/Setting_edt</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="Setting_sureTxt" parent="all_Match_parent">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/Setting_sureTxt</item>
+        <item name="android:background">@drawable/bg_tv_to_btn</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="fullScreen_dialog" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+    </style>
+
+    <style name="dialog_record_list_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">@dimen/record_dialog_list_title</item>
+    </style>
+    <style name="dialog_record_edit">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/record_dialog_edit</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+    <style name="dialog_quexian_edit" parent="dialog_record_edit">
+
+    </style>
+
+    <style name="dialog_record_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/record_dialog_list_title</item>
+        <item name="android:background">@drawable/bg_record_btn</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="dialog_record_list_item" parent="dialog_record_list_title">
+        <item name="android:maxWidth">45dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">5</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="activity_pic_show_list" parent="dialog_record_list_item">
+        <item name="android:textSize">@dimen/pic_show_list</item>
+        <item name="android:maxEms">500</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxWidth">1200dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="mainWifiLink" parent="textSet">
+        <item name="android:textSize">@dimen/preview_wifiLinkTextSize</item>
+    </style>
+
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_appear</item>
+        <item name="android:windowExitAnimation">@anim/dialog_disappear</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+
+    </style>
+
+</resources>

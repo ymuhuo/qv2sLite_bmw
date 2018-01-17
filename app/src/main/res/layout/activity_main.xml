@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.ui.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/bominwell_logo"
+            android:visibility="visible"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/pre_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_btn_bg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginBottom="18dp"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:src="@mipmap/preview1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom|center"
+                        android:text="预览"
+                        style="@style/textSet" />
+                </FrameLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/play_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_btn_bg"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:src="@mipmap/playback1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom|center"
+                        android:text="回放"
+                        style="@style/textSet"/>
+                </FrameLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_btn_bg"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:src="@mipmap/picture1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom|center"
+                        android:text="图片浏览"
+                        style="@style/textSet"/>
+                </FrameLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/environment_stat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@drawable/img_btn_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:src="@mipmap/tongji" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="bottom|center"
+                        android:text="环境统计"
+                        style="@style/textSet" />
+                </FrameLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/setting"
+            android:background="@drawable/img_btn_bg"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"/>
+
+            <ImageButton
+                android:id="@+id/wifiLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wifi1"
+                android:background="@drawable/img_btn_bg"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

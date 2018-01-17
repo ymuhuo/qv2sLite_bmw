@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bmw.peek2slite.view.ui.ManufacturerLogoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/tv_pic_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/dialog_normal_title_textsize"
+            android:text="生产商logo选择："/>
+
+        <GridView
+            android:layout_below="@id/tv_pic_choose"
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="4"
+            android:padding="@dimen/activity_horizontal_margin" />
+
+        <ProgressBar
+            android:id="@+id/pb_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

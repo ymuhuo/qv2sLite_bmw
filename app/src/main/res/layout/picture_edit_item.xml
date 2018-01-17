@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/picture_edit_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/picture_edit_item_leixing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/capture_quexian_style"
+            android:singleLine="true"
+            android:maxEms="5"
+            android:ellipsize="end"
+            android:textSize="@dimen/capture_guandaohao" />
+
+        <TextView
+            android:id="@+id/picture_edit_item_quexianName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/capture_quexian_name"
+            android:singleLine="true"
+            android:maxEms="5"
+            android:ellipsize="end"
+            android:textSize="@dimen/capture_guandaohao" />
+
+        <TextView
+            android:id="@+id/picture_edit_item_dengji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:maxEms="5"
+            android:ellipsize="end"
+            android:text="@string/capture_quexian_grade"
+            android:textSize="@dimen/capture_guandaohao" />
+    </LinearLayout>
+</RelativeLayout>

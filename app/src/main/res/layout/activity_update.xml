@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update"
+    android:layout_width="@dimen/updateActivity_width"
+    android:layout_height="@dimen/updateActivity_width"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="@string/peek2sUpdate"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dialog_normal_title_textsize" />
+
+    <RelativeLayout
+        android:id="@+id/sc_updateActivity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/updateActivity_reCheck"
+        android:layout_below="@id/tv_title"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/updateActivity_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="13dp"
+                android:paddingRight="5dp"
+                android:text="@string/checkingInternet"
+                android:textColor="@android:color/black" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/updateActivity_reCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="1dp"
+        android:text="@string/reTry"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/updateActivity_cancel"
+        android:layout_width="@dimen/updateActivity_cancel_width"
+        android:layout_height="@dimen/updateActivity_cancel_width"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:padding="@dimen/updateActivity_cancel_padding"
+        android:src="@mipmap/window_cancel" />
+
+    <ProgressBar
+        android:id="@+id/update_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

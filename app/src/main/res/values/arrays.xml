@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="record_task_direction">
+        <item>顺流(SL)</item>
+        <item>逆流(NL)</item>
+    </string-array>
+
+    <string-array name="record_task_sort">
+        <item>雨水(Y)</item>
+        <item>污水(W)</item>
+        <item>雨污合流(H)</item>
+    </string-array>
+
+    <string-array name="que_xian_style">
+        <item>无缺陷</item>
+        <item>结构性缺陷</item>
+        <item>功能性缺陷</item>
+    </string-array>
+
+    <string-array name="que_xian_gongneng_name">
+        <item>漏水</item>
+        <item>堵塞</item>
+    </string-array>
+
+    <string-array name="que_xian_jiegou_name">
+        <item>破裂</item>
+        <item>变形</item>
+    </string-array>
+
+    <string-array name="que_xian_grade">
+        <item>等级一</item>
+        <item>等级二</item>
+        <item>等级三</item>
+        <item>等级四</item>
+        <item>等级五</item>
+    </string-array>
+
+    <string-array name="record_task_soil_effect">
+        <item>一般土层或 F=0（T=0）</item>
+        <item>Ⅰ级湿陷性黄土、Ⅱ级湿陷性黄土、弱膨胀土（T=6）</item>
+        <item>Ⅲ级湿陷性黄土、中膨胀土、淤泥质土、红黏土（T=8）</item>
+        <item>粉砂层、Ⅳ级湿陷性黄土、强膨胀土、淤泥（T=10）</item>
+    </string-array>
+
+    <string-array name="record_task_regional_important">
+        <item>所有其他区域或 F &lt;4 时（K=0）</item>
+        <item>其他行车道路、附近具有丙类民用建筑工程的区域（K=3）</item>
+        <item>交通干道、附近具有乙类民用建筑工程的区域（K=6）</item>
+        <item>中心商业、附近具有甲类民用建筑工程的区域（K=10）</item>
+    </string-array>
+
+    <string-array name="record_task_guancai">
+        <item>玻璃钢管</item>
+        <item>钢管</item>
+        <item>钢精混凝土管</item>
+        <item>双壁波纹管</item>
+        <item>混凝土管</item>
+        <item>塑料管</item>
+        <item>石棉水泥管</item>
+        <item>陶瓷管</item>
+        <item>陶土管</item>
+        <item>砖石沟</item>
+        <item>铸铁管</item>
+    </string-array>
+
+
+
+
+</resources>

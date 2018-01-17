@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.bmw.peek2slite"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1014
+        versionName "V001F014D18012015"
+    }
+    /* signingConfigs {
+        release {
+            storeFile file('C:\\Users\\admin\\.android\\bominwellKey.jks')
+            storePassword 'bominwellandroid'
+            keyAlias 'bominwellAlias'
+            keyPassword 'bominwellandroid'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }*/
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'com.jiechic.library:xUtils:2.6.14'
+    compile files('libs/AudioEngineSDK.jar')
+    compile files('libs/BmobSDK_3.5.3_20161116.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:23.2.1'
+}
